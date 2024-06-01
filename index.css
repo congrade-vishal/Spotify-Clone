@@ -69,6 +69,9 @@ body{
     display: flex;
     justify-content: space-between;
 }
+.lib-box{
+    overflow: scroll;
+}
 .lib-option img{
     height: 1.25rem;
     width: 1.25rem;
@@ -113,6 +116,30 @@ body{
 .dark-badge{
     background-color: #fff;
     color: #000;
+}
+.info{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 20px;
+}
+.info>span a{
+    text-decoration: none;
+    color: #b3b3b3;
+    font-size: 12px;
+    font-weight: 50px;
+    padding: 10px;
+    
+    
+
+}
+.info-btn{
+    margin-top: 20px;
+}
+.info-btn button{
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #fff;
 }
 .main-content{
     background-color: #121212;
@@ -277,6 +304,7 @@ hr.line{
     font-size: 14px;
     font-weight: 500;
 }
+
 
 
 
