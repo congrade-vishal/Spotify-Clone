@@ -1,3 +1,9 @@
+*{
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif
+    
+}
+
 body{
     font-family: "Montserrat", sans-serif;
     margin: 0;
@@ -81,10 +87,10 @@ body{
 }
 .box{
     background-color: #323232;
-    height: 7rem;
+    height: 8rem;
     border-radius: 0.75rem;
     margin: 0.75rem 0 0.75rem 0;
-    padding: 1.25rem 1rem;
+    padding: 0.25rem 1rem;
 }
 .box-p1{
     font-size: 1rem;
@@ -100,7 +106,7 @@ body{
     border-radius: 100px;
     padding: 0.25rem 1rem;
     font-weight: 700;
-    margin-top: 0.5rem;
+    /* margin-top: 0.5rem; */
     height: 2rem;
     width: fit-content;
 }
@@ -113,32 +119,166 @@ body{
     flex: 1;
     border-radius: 1rem; /*16px*/
     overflow: auto;
-    padding: 0 1.5rem 0 1.5rem;
 }
-.sticky-nav{
-    margin: 0;
-    border-top-left-radius: 1rem;
-    border-top-right-radius: 1rem;
+.header{
+    
     display: flex;
+    height: 64px;
+    width: 100%;
+    margin: 4ppx;
+    padding: 1rem 0 1rem 0;
+    z-index: var(--top-bar-z-index);
     justify-content: space-between;
     background-color: rgba(0, 0, 0, .5);
-    height: 30px;
     position: sticky;
-    padding: 1rem 0 1rem 0;
     align-items: center;
-    z-index: 10;
 }
 .nav-iconArrow i{
     margin-left: 0.75rem;
 }
+.arrow-btn{
+    opacity: 6;
+    cursor: not-allowed;
+    border: none;
+    background-color: #000;
+    color: #fff;
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px 0 0;
+    margin: 0 -3px 0 15px;
+}
 
 .btn{
-    margin: 10px;
+    margin: 6px;
     cursor: pointer;
     font-size: 1rem;
     font-weight: 700;
     height: 50px;
-    width: 80px;
+    width: 100px;
     border: 0;
     border-radius: var(--encore-button-corner-radius,9999px);
 }
+.artists{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    width: 100%;
+    padding: 8px 16px 0 16px;
+}
+.artists a{
+    color: #b3b3b3;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+}
+.artists a:hover{
+    text-decoration:  underline #fff;
+}
+.artists-option1 a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.cards-container{
+    display: flex;
+   flex-wrap: wrap;
+    
+}
+.card{
+    background-color: transparent;
+    width: 200px;
+    height: 260px;
+    padding: 12px;
+    margin-left: 1.5rem;
+    margin-top: 1rem;
+
+}
+.card:hover{
+    background-color: #181818;
+    cursor: pointer;
+}
+.card-img{
+    width: 100%;
+    border-radius: 50%;
+
+}
+.card-title{
+    font-weight: 700;
+}
+.card-info{
+    font-size: 0.85rem;
+    opacity: 0.7;
+}
+
+.card-1{
+    background-color: transparent;
+    width: 200px;
+    height: 260px;
+    padding: 12px;
+    margin-left: 1.5rem;
+    margin-top: 1rem;
+}
+.card-1:hover{
+    background-color: #181818;
+    cursor: pointer;
+}
+.card-1 img{
+    width: 100%;
+    border-radius: 0.5rem;
+
+}
+.card-1-title{
+    font-weight: 700;
+}
+.card-1-info{
+    font-size: 0.85rem;
+    opacity: 0.7;
+}
+.list-container{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 100px;
+}
+.list-item a{
+    text-decoration: none;
+    color: #b3b3b3;
+    font-weight: 400;
+    font-size: 1rem;
+    
+
+}
+ul{
+    list-style: none;
+}
+li>a:hover{
+    text-decoration: underline #fff;
+    color: #fff;
+
+
+}
+hr.line{
+    border: 0.25px solid #b3b3b3;
+    margin-top: 30px;
+    width: 95%;
+}
+.footer{
+    padding: 1rem;
+
+}
+.footer>p{
+    color: #b3b3b3;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+
+
+
+
